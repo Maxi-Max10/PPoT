@@ -212,7 +212,13 @@ public class PiedraPapelTijera extends javax.swing.JFrame {
         
         if(pcJuega==0){
             jLabel3.setText(" PC eligió Piedra. EMPATE!");
-           
+           try {
+            new JFXPanel();
+            String pon = new File("la-cuchilla_1.mp3").toURI().toString();
+            new MediaPlayer(new Media(pon)).play();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
         }
         if(pcJuega==1){
             jLabel3.setText("PC eligió Papel. PC GANA!");
@@ -231,7 +237,13 @@ public class PiedraPapelTijera extends javax.swing.JFrame {
         if(pcJuega==2){
             jLabel3.setText("PC eligió Tijera. USTED GANA!");
             con1 = con1+1;
-            
+                try {
+            new JFXPanel();
+            String pon = new File("bites-ta-da-winner.mp3").toURI().toString();
+            new MediaPlayer(new Media(pon)).play();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
             
         }
         jLabel7.setText(con2+"");
@@ -295,10 +307,23 @@ public class PiedraPapelTijera extends javax.swing.JFrame {
         if(pcJuega==0){
             jLabel3.setText("PC eligió piedra. USTED GANA!");
             con1 = con1+1;
+                try {
+            new JFXPanel();
+            String pon = new File("bites-ta-da-winner.mp3").toURI().toString();
+            new MediaPlayer(new Media(pon)).play();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
         }
         if(pcJuega==1){
             jLabel3.setText("PC eligió Papel. EMPATE!");
-            
+              try {
+            new JFXPanel();
+            String pon = new File("la-cuchilla_1.mp3").toURI().toString();
+            new MediaPlayer(new Media(pon)).play();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
         }
         if(pcJuega==2){
             jLabel3.setText("PC eligió Tijera. PC GANA!");
@@ -334,10 +359,23 @@ public class PiedraPapelTijera extends javax.swing.JFrame {
         if(pcJuega==1){
             jLabel3.setText("PC eligió Papel. USTED GANA!");
             con1=con1+1;
+            try {
+            new JFXPanel();
+            String pon = new File("bites-ta-da-winner.mp3").toURI().toString();
+            new MediaPlayer(new Media(pon)).play();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
         }
         if(pcJuega==2){
             jLabel3.setText("PC eligió Tijera. EMPATE!");
-            
+              try {
+            new JFXPanel();
+            String pon = new File("la-cuchilla_1.mp3").toURI().toString();
+            new MediaPlayer(new Media(pon)).play();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
         }
         jLabel7.setText(con2+"");
         jLabel9.setText(con1+"");
